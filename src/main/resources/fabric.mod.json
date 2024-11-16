@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "alchemicalwarfare",
+	"version": "${version}",
+	"name": "Alchemical Warfare",
+	"description": "Combat mod with stuff like potions, basically",
+	"authors": [
+		"DeltaBeee"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/DeltaBeee/AlchemicalWarfare"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/alchemicalwarfare/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.deltabeee.alchemicalwarfare.AlchemicalWarfare"
+		],
+		"fabric-datagen": [
+			"net.deltabeee.alchemicalwarfare.AlchemicalWarfareDataGenerator"
+		],
+		"client": [
+			"net.deltabeee.alchemicalwarfare.AlchemicalWarfareClient"
+		]
+	},
+	"mixins": [
+		"alchemicalwarfare.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
